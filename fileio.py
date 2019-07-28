@@ -24,7 +24,16 @@ with open("sample.txt", "r") as jabber:
     lines = jabber.readlines()
 print(lines)  # this print the file as an array of strings
 
-for line in lines:
+for line in lines[::-1]:
     print(line, end='')
+
+with open("sample.txt", "r") as jabber:
+    lines = jabber.read()
+print(lines)
+
+for line in lines[::-1]:
+    print(line, end='')
+
+
 
 
