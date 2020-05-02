@@ -1,33 +1,44 @@
-decimals = range(0, 100)
-my_range = decimals[3:40:3]
-# equality in ranges
-print(my_range == range(3, 40, 3))  # will print True is the same range the was created in the previous line
+# # print(range(100))
+#
+# # using range to fill a list
+# my_list = list(range(10))  # fill the list ordered from 0 to 9
+# print(my_list)
+#
+# even = list(range(0, 10, 2))  # fill the list ordered from 0 to 9 skipping 2 positions
+# odd = list(range(1, 10, 2)) # fill the list ordered from 1 to 9 skipping 2 positions
+#
+# print(even)
+# print(odd)
 
-print(range(0, 5, 2) == range(0, 6, 2))  # will print True again because we are not specifying the same list of numbers
-#  to take the range.
+# working with indexes in a string
+# my_string = "abcdefghijklmnopqrstuvwxyz"
+# print(my_string.index("e"))  # returns 4 that is e, array based indexation starting from 0
+# print(my_string[4])  # returns e that is 4 index, array based indexation starting from  0
+#
+#
+# small_decimals = range(0, 10)
+# print(small_decimals)
+# print(small_decimals.index(3))
+#
+# odd = range(1, 10000, 2)
+# print(odd)
+#
+# print(odd[1234])
 
-r = range(0, 100)
-print(r)
+# to slice a range
+decimals = range(0,100)
+print(decimals)
 
-for i in r[::-2]:  # prints in a reverse way the numbers skipping by 2
+my_range = decimals[3:40:3]  # the : allows take a range inside another range in this case takes from 3 to 40
+# skipping by 3
+
+print(my_range)
+
+for i in my_range:
     print(i)
 
-print('=' * 50)
-for i in range(99, 0, -2):
+
+print('=' * 40)
+
+for i in range(3, 40, 3):
     print(i)
-
-print('=' * 50)
-print(range(0, 100)[::-2] == range(99, 0, -2))  # will print True because both functions takes the range of values in a
-# inverse way
-
-for i in range(0, 100, -2):
-    print(i)  # will print nothing because we are starting the range at 0 and in the range we are telling that skips
-# by -2 so the function will starts at the end of the range.
-
-
-forward_string = "Python is a very powerful language"
-backwards_string = forward_string[::-1]
-
-print(backwards_string)  # will print this phrase in an inverse way
-print(backwards_string[::-1])  # will print this phrase in a forward way
-print(forward_string == backwards_string[::-1]) 
