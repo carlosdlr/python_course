@@ -1,0 +1,12 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+.idea
+
+__pycache__/sets.cpython-39.pyc
+
+.DS_Store
+
+blackjack/__pycache__/blackjack.cpython-38.pyc
+
+blackjack/__pycache__/main.cpython-38.pyc

@@ -5,6 +5,16 @@ fruits = {"orange": "a sweet, citrus fruit",
 
 # print(fruits)
 
+def add_numbers(a, b):
+    return a+b
+
+functions = {
+    "add": add_numbers
+}
+
+add = functions.get("add")
+print(add(1,2))
+
 # print(fruits["apple"])  # accessing the date in the dictionary by key
 #
 # bike = {"make": "honda", "model": "250 dream", "colour": "red", "engine_size": "250"}
